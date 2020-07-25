@@ -5,7 +5,7 @@
     <h3>Create your own cocktail</h3>
     <%= simple_form_for @cocktail do |f| %>
       <%= f.input :name %>
-      <%= f.input :image %>
+      <%= f.input :photo, as: :file %>
       <%= f.submit "Create Cocktail", class: "btn btn-dark btn btn-block" %>
     <% end %>
   </div>
