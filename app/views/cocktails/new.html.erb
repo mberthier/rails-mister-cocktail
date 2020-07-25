@@ -1,0 +1,12 @@
+<div class="card-category-create" style="background-image: url(https://images.pexels.com/photos/1283219/pexels-photo-1283219.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
+</div>
+<div class="container">
+  <div id="form-cocktail" class="col-sm-6 offset-sm-3">
+    <h3>Create your own cocktail</h3>
+    <%= simple_form_for @cocktail do |f| %>
+      <%= f.input :name %>
+      <%= f.input :image %>
+      <%= f.submit "Create Cocktail", class: "btn btn-dark btn btn-block" %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div id="coktails-gallery" class="container">
+  <div class="d-flex justify-content-around flex-wrap">
+    <% @cocktails.each do |cocktail| %>
+      <div class="card-category-home" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cocktail.image %>)">
+        <h1><%= link_to cocktail.name, cocktail_path(cocktail) %></h1>
+      </div>
+    <% end %>
+  </div>
+</div>
