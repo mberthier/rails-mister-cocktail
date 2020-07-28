@@ -12,7 +12,18 @@
 @import "components/index";
 @import "pages/index";
 
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 
+html {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100%;
+}
 
 h1 {
   margin: 32px;
@@ -37,6 +48,10 @@ a {
   }
 }
 
+#new-cocktail {
+  height: 100vh;
+}
+
 #recipe {
   margin-bottom: 50px;
 }
@@ -52,3 +67,5 @@ a {
     margin-bottom: 0px;
   }
 }
+
+
