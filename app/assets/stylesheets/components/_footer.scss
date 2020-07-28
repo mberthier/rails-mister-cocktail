@@ -1,4 +1,8 @@
 .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 150px;
   background: #23282B;
   text-align: center;
   padding: 12px 50px;
