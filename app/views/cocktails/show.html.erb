@@ -31,7 +31,7 @@
   </div>
   <div class="row mt-4">
     <div id="rating" class="col-sm-6">
-      <h3>Reviews (<%= @cocktail.reviews.count %>)</h3>
+      <h3>All reviews (<%= @cocktail.reviews.count %>)</h3>
       <ul>
         <% @cocktail.reviews.each do |review| %>
           <li>
@@ -41,6 +41,7 @@
           <hr>
         <% end %>
       </ul>
+      <h3>Leave a review</h3>
       <%= render "reviews/new", cocktail: @cocktail, review: @review %>
     </div>
   </div>
